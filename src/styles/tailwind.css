@@ -5,8 +5,15 @@ body{
     box-sizing: border-box;
 }
 
- /* @tailwind base; */
+pre{
+    background: #f6f8fa;
+    overflow-x: auto;
+    width: 100%;
+    padding: 0.5rem;
+}
 
 @tailwind components; 
 
 @tailwind utilities;
+
+
