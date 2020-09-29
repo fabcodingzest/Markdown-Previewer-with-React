@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Editor from "./components/Editor";
+import Previewer from "./components/Previewer";
 
-function App() {
+const App = () => {
+  const [md, setMd] = useState("");
+  const handleOnChange = (e) => {
+    let input = e.target.value;
+    setMd(input);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen w-screen bg-black flex justify-center items-center flex-col">
+      <Editor onChange={handleOnChange} markdown={md} />
+      <Previewer markdown={md} />
+      <h1 className="text-white"> uhvfirfgy </h1>
     </div>
   );
-}
+};
 
 export default App;
