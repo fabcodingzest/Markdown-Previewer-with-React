@@ -12,6 +12,10 @@ pre{
   padding: 0.5rem;
 }
 
+textarea {
+  min-height: 18rem;
+}
+
 .bg-black{
   --bg-opacity: 1;
   background-color: #000;
@@ -60,10 +64,6 @@ pre{
   justify-content: center;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-screen{
   height: 100vh;
 }
@@ -74,6 +74,11 @@ pre{
 
 .m-0{
   margin: 0;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-4{
@@ -126,8 +131,12 @@ pre{
   color: rgba(116, 42, 42, var(--text-opacity));
 }
 
-.w-1\/2{
-  width: 50%;
+.break-words{
+  overflow-wrap: break-word;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .w-screen{
@@ -165,6 +174,12 @@ pre{
   }
 }
 
+@media only screen and (min-width: 900px){
+  textarea {
+    min-height: 30rem;
+  }
+}
+
 @media (min-width: 640px){
 }
 
@@ -181,6 +196,10 @@ pre{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px){
@@ -188,5 +207,4 @@ pre{
 
 @media (min-width: 1280px){
 }
-
 
