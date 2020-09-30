@@ -46,7 +46,8 @@ _You **can** combine them_
 
 ## Images
 
-![This is a alt text.](/image/sample.png "This is a sample image.")
+![This is a alt text.](https://source.unsplash.com/random/200x300)
+![This is a alt text.](https://source.unsplash.com/random/300x300)
 
 ## Links
 

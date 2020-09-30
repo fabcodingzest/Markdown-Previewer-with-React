@@ -2,7 +2,7 @@ import React from "react";
 import marked from "marked";
 
 marked.setOptions({
-  breaks: true
+  // breaks: true
 });
 
 const renderer = new marked.Renderer();

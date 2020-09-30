@@ -18,6 +18,11 @@ a {
     color: blue;
 }
 
+img {
+  display: inline;
+  max-width: 300;
+}
+
 a:visited {
     color: purple;
 }
