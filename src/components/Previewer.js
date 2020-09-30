@@ -13,7 +13,7 @@ renderer.link = function (href, title, text) {
 const Previewer = (props) => {
   return (
     <div
-      className="prose prose-lg bg-white mt-2 w-full md:w-1/2 rounded break-words min-h-3/4 m-0 md:m-2 md:my-4 border border-2 p-2"
+      className="prose-sm bg-white mt-2 w-full md:w-1/2 rounded break-words min-h-3/4 m-0 md:m-2 md:my-4 border border-2 p-2"
       dangerouslySetInnerHTML={{
         __html: marked(props.markdown, { renderer: renderer })
       }}
